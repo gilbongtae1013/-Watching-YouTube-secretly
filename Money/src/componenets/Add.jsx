@@ -1,26 +1,24 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 
-import copang from '../assets/copang.png'
-import ajd from '../assets/ajd.png'
-import church from '../assets/church.png'
 
+export default function Add({Video, setVideo, imageUrl}) {
 
-export default function Add({Video, setVideo}) {
+    
 
 
     return (
         <div className='container'>
             <div id='leftSide'>
                 <Link id='ajdBox' to="/yedit">
-                    <img src={ajd}/>
+                    <img src={imageUrl[0]}/>
                     <div className='mr-X'>X</div>
                 </Link>
 
-                <div id='churchBox'>
-                    <img src={church}/>
+                <Link id='churchBox' to='/addedit'>
+                    <img src={imageUrl[1]}/>
                     <div className='mr-X'>X</div>
-                </div>
+                </Link>
             </div>
 
             <div className='mainBox'>
@@ -41,7 +39,7 @@ export default function Add({Video, setVideo}) {
                     <div className='mr-X'>X</div>
                 </div>
                 <div id='copangBox'>
-                    <img src={copang}/>
+                    <img src={imageUrl[2]}/>
                     <div className='mr-X'>X</div>
                 </div>
             </div>

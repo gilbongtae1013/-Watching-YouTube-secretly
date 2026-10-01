@@ -130,3 +130,30 @@
   height: 40px;
   cursor: pointer;
 }
+
+/*Ad 영역*/
+
+.Ad-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.Ad-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Ad-container > div > input {
+  border: 1px solid black;
+  width: 400px;
+}
+
+.Ad-fiddle {
+  margin-top: 140px;
+  width: 600px;
+}

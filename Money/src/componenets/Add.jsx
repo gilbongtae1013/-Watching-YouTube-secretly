@@ -2,13 +2,13 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 
 
-export default function Add({Video, setVideo, imageUrl}) {
+export default function Add({Video, setVideo, imageUrl, isAbsolute}) {
 
     
 
 
     return (
-        <div className='container'>
+        <div className={isAbsolute ? "absolute container" : "container"}>
             <div id='leftSide'>
                 <Link id='ajdBox' to="/yedit">
                     <img src={imageUrl[0]}/>
@@ -38,10 +38,10 @@ export default function Add({Video, setVideo, imageUrl}) {
                     ></iframe>
                     <div className='mr-X'>X</div>
                 </div>
-                <div id='copangBox'>
+                <Link id='copangBox' to='/contentedit'>
                     <img src={imageUrl[2]}/>
                     <div className='mr-X'>X</div>
-                </div>
+                </Link>
             </div>
         </div>
     )

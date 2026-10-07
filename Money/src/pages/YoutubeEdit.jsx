@@ -23,7 +23,7 @@ export default function YoutubeEdit({Video, setVideo}) {
         }
 
         setVideo(GetYId(Link));
-
+        navigate('/');
     }
 
     return (

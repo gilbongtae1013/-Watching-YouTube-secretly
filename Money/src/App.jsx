@@ -18,6 +18,7 @@ function App() {
   const [contentLink, setContentLink] = useState("");
   const [Video, setVideo] = useState("");
   const [isAbsolute, setIsAbsolute] = useState(false);
+  const [imsiLink, setImsiLink] = useState("");
 
   const [imageUrl, setImageUrl] = useState({
     0: church,
@@ -32,7 +33,8 @@ function App() {
           <Route path='/' element={<ViewContent contentLink={contentLink}/>}/>
           <Route path='/yedit' element={<YoutubeEdit Video={Video} setVideo={setVideo}/>}/>
           <Route path='/addedit' element={<AddImage setImageUrl={setImageUrl} imageUrl={imageUrl}/>}/>
-          <Route path='/contentedit' element={<ContentEdit contentLink={contentLink} setContentLink={setContentLink} isAbsolute={isAbsolute} setIsAbsolute={setIsAbsolute}/>}/>
+          <Route path='/contentedit' element={<ContentEdit contentLink={contentLink} setContentLink={setContentLink} isAbsolute={isAbsolute} setIsAbsolute={setIsAbsolute}
+          imsiLink={imsiLink} setImsiLink={setImsiLink}/>}/>
         </Route>
 
       </Routes>

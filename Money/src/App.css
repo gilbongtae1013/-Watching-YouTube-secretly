@@ -48,7 +48,6 @@
   left: 0px;
   top: 0px;
   height: 100%;
-  width: 400px; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,7 +88,7 @@
 
 #ajdBox {
   position:relative;
-  width: 320px;
+  width: 280px;
 }
   #ajdBox img {
     width: 100%;
@@ -98,8 +97,8 @@
 
 #churchBox {
   position: relative;
-  width: 300px;
-  margin-top: 32px;
+  width: 280px;
+  margin-top: 72px;
 }
   #churchBox img {
     width: 100%;

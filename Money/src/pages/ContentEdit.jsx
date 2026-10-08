@@ -19,7 +19,7 @@ export default function ContentEdit({contentLink, setContentLink, isAbsolute, se
         setContentLink(finalUrl);
         navigate('/');
     }
-
+    
     return (
         <div className="Content-container">
             <h1>가짜 웹사이트를 입력하시오</h1>

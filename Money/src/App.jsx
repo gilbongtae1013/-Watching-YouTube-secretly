@@ -27,7 +27,7 @@ function App() {
   });
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path='/' element={<Add Video={Video} setVideo={setVideo} imageUrl={imageUrl} isAbsolute={isAbsolute}/>}>
           <Route path='/' element={<ViewContent contentLink={contentLink}/>}/>

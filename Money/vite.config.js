@@ -3,6 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/-Watching-YouTube-secretly/', // 저장소 이름을 정확히 입력
+  base: '/', // 저장소 이름 경로 대신 '/'로 변경
 })
-
